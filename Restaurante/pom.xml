@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>co.edu.uniquindio.restaurante/co.edu.uniquindio.restaurante.HelloApplication
+                            <mainClass>co.edu.uniquindio.restaurante/co.edu.uniquindio.restaurante.App
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
