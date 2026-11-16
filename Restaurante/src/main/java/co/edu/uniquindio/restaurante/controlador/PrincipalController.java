@@ -23,7 +23,7 @@ public class PrincipalController {
 
     @FXML
     private void initialize() {
-        onIrAPlatos();
+        onIrAPedido();
     }
 
     @FXML
