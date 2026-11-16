@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.restaurante.controlador.PrincipalController">
+    <left>
+        <VBox styleClass="sidebar" spacing="4">
+            <Label text="R  Restaurante"
+                   style="-fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: 700; -fx-padding: 24 20 20 20;"/>
+            <Label text="GESTIÓN DE PEDIDOS"
+                   style="-fx-text-fill: #9CA3AF; -fx-font-size: 11px; -fx-padding: 0 20 8 20;"/>
+            <Button fx:id="btnNavPedido" text="Realizar pedido" maxWidth="Infinity"
+                    styleClass="sidebar-item" onAction="#onIrAPedido"/>
+            <Button fx:id="btnNavPlatos" text="Platos" maxWidth="Infinity"
+                    styleClass="sidebar-item" onAction="#onIrAPlatos"/>
+        </VBox>
+    </left>
+    <center>
+        <StackPane fx:id="contenido"/>
+    </center>
+</BorderPane>

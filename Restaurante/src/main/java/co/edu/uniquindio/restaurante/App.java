@@ -8,11 +8,14 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class App extends Application {
+    private static final String BASE = "/co/edu/uniquindio/restaurante/";
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        FXMLLoader loader = new FXMLLoader(App.class.getResource(BASE + "vista/principal-view.fxml"));
+        Scene scene = new Scene(loader.load(), 1280, 800);
+        scene.getStylesheets().add(App.class.getResource(BASE + "css/estilos.css").toExternalForm());
+        stage.setTitle("Restaurante - Gestión de pedidos");
         stage.setScene(scene);
         stage.show();
     }
