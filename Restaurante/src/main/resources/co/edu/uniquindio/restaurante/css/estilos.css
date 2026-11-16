@@ -1,0 +1,48 @@
+/* Tema del Restaurante (colores del prototipo de Figma) */
+.root {
+    -color-sidebar: #1F2430;
+    -color-fondo: #FAF7F2;
+    -color-superficie: #FFFFFF;
+    -color-primario: #D9622B;
+    -color-texto: #1F2430;
+    -color-texto-suave: #6B7280;
+    -color-borde: #E7E1D8;
+    -color-exito: #2E8B57;
+    -color-error: #C73E3A;
+    -color-error-fondo: #FDECEA;
+    -color-no-disponible: #9CA3AF;
+    -fx-font-family: "Inter", "Segoe UI", "System";
+    -fx-font-size: 14px;
+    -fx-text-fill: -color-texto;
+    -fx-background-color: -color-fondo;
+}
+
+.sidebar { -fx-background-color: -color-sidebar; -fx-pref-width: 240px; }
+.sidebar-item { -fx-background-color: transparent; -fx-text-fill: #D1D5DB; -fx-alignment: CENTER_LEFT; -fx-padding: 12 20; }
+.sidebar-item:hover { -fx-background-color: rgba(255,255,255,0.08); }
+.sidebar-item-activo { -fx-background-color: rgba(255,255,255,0.12); -fx-text-fill: white; -fx-border-color: -color-primario; -fx-border-width: 0 0 0 4; }
+
+.titulo { -fx-font-size: 28px; -fx-font-weight: 600; }
+.subtitulo { -fx-font-size: 14px; -fx-text-fill: -color-texto-suave; }
+.etiqueta { -fx-font-size: 12px; -fx-font-weight: 600; }
+
+.panel { -fx-background-color: -color-superficie; -fx-background-radius: 12; -fx-border-color: -color-borde; -fx-border-radius: 12; -fx-padding: 20; -fx-effect: dropshadow(gaussian, rgba(31,36,48,0.06), 12, 0, 0, 2); }
+
+.campo, .combo-box, .spinner { -fx-background-color: white; -fx-background-radius: 10; -fx-border-color: -color-borde; -fx-border-radius: 10; -fx-padding: 6 10; }
+.campo-error { -fx-border-color: -color-error; -fx-border-width: 1.5; }
+.mensaje-error { -fx-text-fill: -color-error; -fx-font-size: 12px; }
+.banner-error { -fx-background-color: -color-error-fondo; -fx-text-fill: -color-error; -fx-background-radius: 10; -fx-padding: 10 14; -fx-font-weight: 600; }
+
+.boton-primario { -fx-background-color: -color-primario; -fx-text-fill: white; -fx-font-weight: 600; -fx-background-radius: 10; -fx-padding: 10 18; -fx-cursor: hand; }
+.boton-primario:disabled { -fx-opacity: 0.45; }
+.boton-secundario { -fx-background-color: white; -fx-text-fill: -color-texto; -fx-border-color: -color-borde; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 10 18; -fx-cursor: hand; }
+.boton-peligro { -fx-background-color: white; -fx-text-fill: -color-error; -fx-border-color: -color-error; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 10 18; }
+
+.pill { -fx-background-radius: 999; -fx-padding: 2 10; -fx-font-size: 11px; -fx-font-weight: 600; }
+.pill-disponible { -fx-background-color: #E3F4EA; -fx-text-fill: -color-exito; }
+.pill-no-disponible { -fx-background-color: #ECEEF1; -fx-text-fill: -color-no-disponible; }
+
+.chip { -fx-background-color: white; -fx-border-color: -color-borde; -fx-background-radius: 999; -fx-border-radius: 999; -fx-padding: 4 14; }
+.chip:selected { -fx-background-color: -color-primario; -fx-text-fill: white; -fx-border-color: -color-primario; }
+
+.total { -fx-font-size: 28px; -fx-font-weight: 700; -fx-text-fill: -color-primario; }
